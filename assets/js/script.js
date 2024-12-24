@@ -56,7 +56,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Pre-Final Year Student @ KSRMCE", "backend development", "web designing", "Designer", "web development"],
+    strings: ["Final Year Student @ KSRMCE", "Froentend development", "Backend Developement", "Web Development", "Software Engineering"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
@@ -86,13 +86,21 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 
 // pre loader start
 function loader() {
-    document.querySelector('.loader-container').classList.add('fade-out');
-}
-function fadeOut() {
-    setInterval(loader, 3600);
-}
-window.onload = fadeOut;
-
+        document.querySelector('.loader-container').classList.add('fade-out');
+        document.documentElement.classList.remove('no-scroll'); // Remove from html
+        document.body.classList.remove('no-scroll'); // Remove from body
+    }
+    
+    function fadeOut() {
+        setTimeout(loader, 3500); // Use setTimeout instead of setInterval for one-time execution
+    }
+    
+    window.onload = () => {
+        document.documentElement.classList.add('no-scroll'); // Add to html
+        document.body.classList.add('no-scroll'); // Add to body
+        fadeOut();
+    };
+    
 
 
 

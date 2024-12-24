@@ -223,6 +223,11 @@ html::-webkit-scrollbar-thumb {
   opacity: 0; /* Fade out by reducing opacity to 0 */
 }
 
+html.no-scroll,
+body.no-scroll {
+  overflow: hidden;
+  height: 100%; /* Ensures no scrollbars are visible */
+}
 /* pre loader end */
 
 /* navbar starts */
