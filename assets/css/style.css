@@ -434,7 +434,7 @@ body.noscroll {
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-image: url(./assets/images/portraitcopy.png);
+    background-image: url(../assets/images/portraitcopy.png);
 }
 
 @media (max-width: 576px) {
@@ -462,7 +462,7 @@ body.noscroll {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-image: url(./assets/images/NSR1.png);
+        background-image: url(../assets/images/NSR1.png);
 
     }
 
